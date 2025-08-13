@@ -12,7 +12,27 @@
       margin: 0;
       padding: 20px;
       background-color: #ffe3fd;
+      text-align: center;
     }
+
+    /* Perbaiki layout banner di bagian home */
+.home-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.home-flex img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+.home-flex p {
+  flex: 1 1 300px;
+  text-align: justify;
+  margin: 0;
+}
 
     .navbar {
     background-color: #e0a9e0;
@@ -75,11 +95,9 @@ section {
     }
 
     .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 16px;
-      max-width: 1200px;
-      margin: 0 auto;
+     display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
     }
 
     .product-card {
@@ -882,3 +900,4 @@ searchInput.addEventListener('keyup', function() {
 </script>
 </body>
 </html>
+
