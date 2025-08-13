@@ -266,6 +266,23 @@ animation-delay: 3s;
 .wa-btn:hover {
   background-color: #1ebe5d;
 }
+
+    .home-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.home-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* bikin gambar rapi tanpa ketarik */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
   </style>
 
 </head>
@@ -306,9 +323,7 @@ animation-delay: 3s;
        Nggak cuma buket, Doramiyaku juga punya koleksi ganci lucu & unik, dari karakter anime, bentuk makanan mini, 
        sampai desain custom yang bisa kamu request sendiri. Cocok banget buat hadiah kecil, hiasan
         tas, atau koleksi pribadi!</p>
-              <img src="asset/b bunga boneka 70k.jpg" alt="buket" style="width: 10%; height: auto;">
-              <img src="asset/ganci.2k.jpg " alt="baner" style=width: 10%; height: auto;">
-             
+                          
         <div style="display: flex; align-items: center; flex-wrap: wrap;">
     <img src="asset/banner.png" alt="banner" style="width: 200px; max-width: 100%; margin-right: 20px; flex-shrink: 0;">
     <p style="text-align: justify; margin: 0; flex: 1;">
@@ -321,13 +336,20 @@ animation-delay: 3s;
     </p>
         </div>
 
-        
+         <div class="home-gallery">
+    <img src="asset/b snack coklat 70k.jpg" alt="Banner">
+    <img src="asset/banner2.png" alt="Buket Boneka">
+    <img src="asset/ganci.2k.jpg" alt="Ganci">
+    <img src="asset/b mini 20k.jpg" alt="Buket Satin">
+    <img src="asset/b kupu2 led biru.jpg" alt="Buket LED">
+    <img src="asset/bolu pink 15k.jpg" alt="Bolu Pink">
+    <img src="asset/bunga 20k biru.jpg" alt="Bunga Biru">
+    <img src="asset/b uang 80kk.jpg" alt="uang">
+  </div>
+   
       
       
-       <img src="asset/b bunga satin 60k.jpg" alt="satin" style="max-width: 50%;">
-       <img src="asset/b kupu2 led biru.jpg" alt="pink" style="max-width: 50%;"><br>
-       <img src="asset/bolu pink 15k.jpg" alt="baner" style="max-width: 50%;">
-       <img src="asset/bunga 20k biru.jpg" alt="baner" style="max-width: 50%;">
+      
 <h5 style="text-align: center;"> setiap hari lebih berwarna bersama Doramiyaku! 🌸<br>
 cek katalog kami sekarang dan temukan yang paling cocok buat kamu 💬<br>
 📲 Order via DM/chat ya!</h5>
@@ -898,6 +920,7 @@ searchInput.addEventListener('keyup', function() {
 </script>
 </body>
 </html>
+
 
 
 
